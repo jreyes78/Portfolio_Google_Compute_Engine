@@ -1,0 +1,13 @@
+How to set up Google Compute Engine
+
+Step 1: Create console.cloud.google.com account
+
+Step 2: Enable billing, then create a budget in the billing section (left slider options)
+
+Step 3: Create a project (top options) to receive permissions to view pages
+
+Step 4: Create Managed Instance Group (choose regional instance to enable option for static external IP address, choose
+        autoscale: on with 1 - 80 machines as 80 machines is the maximum allowed at the time of this writing, and allow
+        HTTP and HTTPS traffic)
+        
+Step 5: Create static external IP address
