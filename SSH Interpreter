@@ -1,2 +1,22 @@
-#How to create an SSH interpreter connected to Google Compute Engine in Pycharm
+How to create an SSH interpreter connected to Google Compute Engine in Pycharm:
+
+  Step 1: Create public key in terminal using command (Mac):
+  
+            ssh-keygen -t rsa
+  
+  Step 2: Enter following command:
+  
+            cat /Users/YOUR_LOCAL_MACHINE_USERNAME/.ssh/id_rsa.pub
+            
+  Step 3: Copy contents of previous command, but replace the final your_local_machine_username@local_machine 
+          with your_VM_username@local_machine
+         
+  Step 4: Go to your VM metadata: SSH section and add the previously copied contents with replaced username 
+          to your VM's list of public keys, then save
+         
+  Step 5: Test SSH functionality by running the follwing command:
+ 
+            ssh your_vm_username@vm_external_ip_address
+            
+  Step 6: You're all set! You should be SSH connected to your remote Google Compute Engine
 
