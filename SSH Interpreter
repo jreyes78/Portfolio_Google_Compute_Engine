@@ -18,5 +18,22 @@ How to create an SSH interpreter connected to Google Compute Engine in Pycharm:
  
             ssh your_vm_username@vm_external_ip_address
             
-  Step 6: You're all set! You should be SSH connected to your remote Google Compute Engine
+  Step 6: You're all set! You should be SSH connected to your remote Google Compute Engine. Now PyCharm
+  
+  Step 7: Download PyCharm Professional (Community does not offer SSH interpreter)
+  
+  Step 8: Go to PyCharm: Preferences: Build Execution Deployment: Deployment: Options: Add New Host Key to Known_Hosts: Always,
+          then click Apply: Ok 
+          
+  Step 9: Go to PyCharm Preferences: Build Execution Deployment: Deployment: Enter in all information (vm machine's external IP
+          address as SFTP host, Port: 22 (make sure VM allows traffic to port 22, this should be the default setting), Username:
+          Your_VM_Username, Auth Type: Password, Key Passphrase: Enter Passphrase
+          
+  Step 10: Click: Test SFTP Connection, then WooHoo! Your connection works!
+  
+  Step 11: Go to Mappings (next to Connection), choose local path and deployment path
+  
+  Step 12: Click: Apply, OK
+  
+  Step 13: WooHoo! You now have an SSH interpreter as an interpreter option! You're all set!
 
